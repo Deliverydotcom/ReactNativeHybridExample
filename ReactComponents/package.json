@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-native": "^0.16.0"
+    "react-native": "^0.16.0",
+    "react-native-code-push": "^1.5.0-beta"
   }
 }

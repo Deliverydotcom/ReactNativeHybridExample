@@ -17,7 +17,7 @@ class ReactNativeViewSwift: UIView {
         // Configure and set and data to be passed to react
         // ================================================
         
-        let REACT_DEV_MODE = true
+        let REACT_DEV_MODE = false
         
         if self.data == nil {
             self.data = [String: AnyObject]()

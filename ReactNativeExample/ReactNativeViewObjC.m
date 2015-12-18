@@ -17,7 +17,7 @@
     // Configure and set and data to be passed to react
     // ================================================
     
-    BOOL REACT_DEV_MODE = YES;
+    BOOL REACT_DEV_MODE = NO;
     
     if (self.data == nil) {
         self.data = [@{} mutableCopy];
