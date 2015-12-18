@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react-native';
+import CodePush from 'react-native-code-push';
 
 // Views
 import SwiftView      from './Views/SwiftView';
@@ -24,6 +25,12 @@ const RouteStack = {
 };
 
 class ReactNativeExample extends React.Component {
+
+	componentDidMount() {
+		if (!this.props.DEV_MODE) {
+			CodePush.sync();
+		}
+	}
 
 	getRouteWithProps(route, props) {
 		return {

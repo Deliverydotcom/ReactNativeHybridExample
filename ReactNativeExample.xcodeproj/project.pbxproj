@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3FB85B6C96916A3B54395211 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D939F92F7C9199759E52CD66 /* libPods.a */; };
 		EC0691C01C23822500C1417F /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = EC0691BF1C23822500C1417F /* main.jsbundle */; };
+		EC0691CA1C249CBF00C1417F /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0691C91C249C8700C1417F /* libCodePush.a */; };
+		EC0691CC1C249CD000C1417F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0691CB1C249CD000C1417F /* libz.tbd */; };
 		ECCFE67C1C23675800C10835 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE67B1C23675800C10835 /* main.m */; };
 		ECCFE67F1C23675800C10835 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE67E1C23675800C10835 /* AppDelegate.m */; };
 		ECCFE6871C23675800C10835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCFE6861C23675800C10835 /* Assets.xcassets */; };
@@ -21,10 +23,22 @@
 		ECCFE6A31C2371D600C10835 /* ReactNativeViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE6A21C2371D600C10835 /* ReactNativeViewSwift.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC0691C81C249C8700C1417F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0691C41C249C8700C1417F /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = CodePush;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		61AF01E09727E779AC6603FA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D939F92F7C9199759E52CD66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0691BF1C23822500C1417F /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
+		EC0691C41C249C8700C1417F /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "ReactComponents/node_modules/react-native-code-push/CodePush.xcodeproj"; sourceTree = "<group>"; };
+		EC0691CB1C249CD000C1417F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ECCFE6771C23675800C10835 /* ReactNativeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCFE67B1C23675800C10835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECCFE67D1C23675800C10835 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,7 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0691CC1C249CD000C1417F /* libz.tbd in Frameworks */,
 				3FB85B6C96916A3B54395211 /* libPods.a in Frameworks */,
+				EC0691CA1C249CBF00C1417F /* libCodePush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,14 +85,24 @@
 		AE8BBF22BE4CB71F6A5EDE31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC0691CB1C249CD000C1417F /* libz.tbd */,
 				D939F92F7C9199759E52CD66 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC0691C51C249C8700C1417F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC0691C91C249C8700C1417F /* libCodePush.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		ECCFE66E1C23675800C10835 = {
 			isa = PBXGroup;
 			children = (
+				EC0691C41C249C8700C1417F /* CodePush.xcodeproj */,
 				ECCFE6791C23675800C10835 /* ReactNativeExample */,
 				ECCFE6781C23675800C10835 /* Products */,
 				011DB1175A94D67EEFFA041A /* Pods */,
@@ -171,12 +197,28 @@
 			mainGroup = ECCFE66E1C23675800C10835;
 			productRefGroup = ECCFE6781C23675800C10835 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EC0691C51C249C8700C1417F /* Products */;
+					ProjectRef = EC0691C41C249C8700C1417F /* CodePush.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ECCFE6761C23675800C10835 /* ReactNativeExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EC0691C91C249C8700C1417F /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = EC0691C81C249C8700C1417F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ECCFE6751C23675800C10835 /* Resources */ = {
@@ -342,6 +384,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"$(SRCROOT)/ReactComponents/node_modules/react-native-code-push/**",
+				);
 				INFOPLIST_FILE = ReactNativeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Delivery.ReactNativeExample;
@@ -357,6 +405,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"$(SRCROOT)/ReactComponents/node_modules/react-native-code-push/**",
+				);
 				INFOPLIST_FILE = ReactNativeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Delivery.ReactNativeExample;

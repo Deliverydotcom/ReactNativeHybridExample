@@ -8,6 +8,7 @@
 
 #import "ReactNativeViewObjC.h"
 #import "RCTRootView.h"
+#import "CodePush.h"
 
 @implementation ReactNativeViewObjC
 
@@ -40,10 +41,10 @@
         jsCodeLocation = [NSURL URLWithString:urlString];
     } else {
         // When not using code push
-        jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+//        jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
         
         // When using code push
-        // jsCodeLocation = [CodePush bundleURL];
+         jsCodeLocation = [CodePush bundleURL];
     }
     
     // Instantiate our root view, add as a subview, set constraints

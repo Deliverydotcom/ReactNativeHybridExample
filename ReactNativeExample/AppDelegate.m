@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CodePush.h"
 
 @interface AppDelegate ()
 
