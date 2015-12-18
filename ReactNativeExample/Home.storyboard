@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Yr-v1-u8f">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="4y3-Qu-ztJ">
+            <objects>
+                <viewController id="Vqe-gJ-xM5" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oR1-gb-J0h"/>
+                        <viewControllerLayoutGuide type="bottom" id="81w-1x-uvs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6vj-LQ-Hb7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="React Native Hybrid App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV4-2B-urh">
+                                <rect key="frame" x="148" y="114" width="305" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U77-8K-7S4">
+                                <rect key="frame" x="213" y="298" width="174" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="React View 1 (Obj C)"/>
+                                <connections>
+                                    <action selector="reactViewObjCPressed:" destination="Vqe-gJ-xM5" eventType="touchUpInside" id="hei-sC-VgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QL7-JJ-TP4">
+                                <rect key="frame" x="215" y="483" width="171" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="React View 2 (Swift)"/>
+                                <connections>
+                                    <action selector="reactViewSwiftPressed:" destination="Vqe-gJ-xM5" eventType="touchUpInside" id="AwP-ct-8ch"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VV4-2B-urh" firstAttribute="top" secondItem="oR1-gb-J0h" secondAttribute="bottom" constant="50" id="5rX-qG-g7s"/>
+                            <constraint firstItem="U77-8K-7S4" firstAttribute="top" secondItem="VV4-2B-urh" secondAttribute="bottom" constant="150" id="H0W-rE-s6k"/>
+                            <constraint firstItem="QL7-JJ-TP4" firstAttribute="top" secondItem="U77-8K-7S4" secondAttribute="bottom" constant="150" id="Jw8-Bj-ei1"/>
+                            <constraint firstItem="U77-8K-7S4" firstAttribute="centerX" secondItem="6vj-LQ-Hb7" secondAttribute="centerX" id="Nj5-qc-FEH"/>
+                            <constraint firstItem="VV4-2B-urh" firstAttribute="centerX" secondItem="6vj-LQ-Hb7" secondAttribute="centerX" id="sIn-qZ-96N"/>
+                            <constraint firstItem="QL7-JJ-TP4" firstAttribute="centerX" secondItem="6vj-LQ-Hb7" secondAttribute="centerX" id="sOa-dK-t1P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmC-zY-73P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TgL-hl-SZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="416"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wzx-hs-VB8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Yr-v1-u8f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y8O-7y-rsr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vqe-gJ-xM5" kind="relationship" relationship="rootViewController" id="oB4-Vr-1fV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voV-wZ-DD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="416"/>
+        </scene>
+        <!--React Native ObjC View Controller-->
+        <scene sceneID="Fen-Bq-vRr">
+            <objects>
+                <viewController storyboardIdentifier="ReactNativeObjCVC" id="eDR-vs-fqH" customClass="ReactNativeObjCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="llr-9Q-3c5"/>
+                        <viewControllerLayoutGuide type="bottom" id="s12-wz-1yP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zVI-Ls-Iop">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a native UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is9-zb-mBA">
+                                <rect key="frame" x="158" y="70" width="286" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eN3-mE-Rcx" customClass="ReactNativeViewObjC">
+                                <rect key="frame" x="0.0" y="113" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="is9-zb-mBA" firstAttribute="top" secondItem="llr-9Q-3c5" secondAttribute="bottom" constant="50" id="1vf-hW-Pgy"/>
+                            <constraint firstItem="is9-zb-mBA" firstAttribute="centerX" secondItem="zVI-Ls-Iop" secondAttribute="centerX" id="5LD-jL-fMu"/>
+                            <constraint firstItem="eN3-mE-Rcx" firstAttribute="top" secondItem="is9-zb-mBA" secondAttribute="bottom" constant="10" id="CWL-2X-lXP"/>
+                            <constraint firstItem="eN3-mE-Rcx" firstAttribute="leading" secondItem="zVI-Ls-Iop" secondAttribute="leading" id="Far-0j-us4"/>
+                            <constraint firstItem="s12-wz-1yP" firstAttribute="top" secondItem="eN3-mE-Rcx" secondAttribute="bottom" id="NdF-0V-oZY"/>
+                            <constraint firstAttribute="trailing" secondItem="eN3-mE-Rcx" secondAttribute="trailing" id="iV1-Ir-ckv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reactViewWrapper" destination="eN3-mE-Rcx" id="QoE-c0-p0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0HQ-aA-dk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="1105"/>
+        </scene>
+        <!--React Native Swift View Controller-->
+        <scene sceneID="3Qw-gu-0v5">
+            <objects>
+                <viewController storyboardIdentifier="ReactNativeSwiftVC" id="ecM-FI-m6I" customClass="ReactNativeSwiftViewController" customModule="ReactNativeExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nzE-iE-LXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="rYr-CJ-Scz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3VW-xa-lYa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a native UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE0-Ft-vKq">
+                                <rect key="frame" x="158" y="70" width="286" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBR-gT-wiG" customClass="ReactNativeViewSwift" customModule="ReactNativeExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="113" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HE0-Ft-vKq" firstAttribute="top" secondItem="nzE-iE-LXs" secondAttribute="bottom" constant="50" id="2hQ-Te-Jpr"/>
+                            <constraint firstItem="SBR-gT-wiG" firstAttribute="leading" secondItem="3VW-xa-lYa" secondAttribute="leading" id="4Bd-W4-xMn"/>
+                            <constraint firstItem="SBR-gT-wiG" firstAttribute="top" secondItem="HE0-Ft-vKq" secondAttribute="bottom" constant="10" id="Oo4-8f-EQA"/>
+                            <constraint firstItem="HE0-Ft-vKq" firstAttribute="centerX" secondItem="3VW-xa-lYa" secondAttribute="centerX" id="ZTk-CY-fzo"/>
+                            <constraint firstItem="rYr-CJ-Scz" firstAttribute="top" secondItem="SBR-gT-wiG" secondAttribute="bottom" id="gad-Vj-Ne4"/>
+                            <constraint firstAttribute="trailing" secondItem="SBR-gT-wiG" secondAttribute="trailing" id="hLg-Pd-rnD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8P-xa-Rpu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="1105"/>
+        </scene>
+    </scenes>
+</document>

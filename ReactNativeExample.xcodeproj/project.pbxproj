@@ -7,25 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB85B6C96916A3B54395211 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D939F92F7C9199759E52CD66 /* libPods.a */; };
+		EC0691C01C23822500C1417F /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = EC0691BF1C23822500C1417F /* main.jsbundle */; };
 		ECCFE67C1C23675800C10835 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE67B1C23675800C10835 /* main.m */; };
 		ECCFE67F1C23675800C10835 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE67E1C23675800C10835 /* AppDelegate.m */; };
-		ECCFE6821C23675800C10835 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE6811C23675800C10835 /* ViewController.m */; };
-		ECCFE6851C23675800C10835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCFE6831C23675800C10835 /* Main.storyboard */; };
 		ECCFE6871C23675800C10835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCFE6861C23675800C10835 /* Assets.xcassets */; };
 		ECCFE68A1C23675800C10835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCFE6881C23675800C10835 /* LaunchScreen.storyboard */; };
+		ECCFE6921C2367E500C10835 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCFE6911C2367E500C10835 /* Home.storyboard */; };
+		ECCFE6951C23680B00C10835 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE6941C23680B00C10835 /* HomeViewController.m */; };
+		ECCFE6981C236E1600C10835 /* ReactNativeObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE6971C236E1600C10835 /* ReactNativeObjCViewController.m */; };
+		ECCFE69B1C236E2F00C10835 /* ReactNativeSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE69A1C236E2F00C10835 /* ReactNativeSwiftViewController.swift */; };
+		ECCFE6A11C2371C500C10835 /* ReactNativeViewObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE6A01C2371C500C10835 /* ReactNativeViewObjC.m */; };
+		ECCFE6A31C2371D600C10835 /* ReactNativeViewSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCFE6A21C2371D600C10835 /* ReactNativeViewSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61AF01E09727E779AC6603FA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D939F92F7C9199759E52CD66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0691BF1C23822500C1417F /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = SOURCE_ROOT; };
 		ECCFE6771C23675800C10835 /* ReactNativeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCFE67B1C23675800C10835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECCFE67D1C23675800C10835 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECCFE67E1C23675800C10835 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ECCFE6801C23675800C10835 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECCFE6811C23675800C10835 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ECCFE6841C23675800C10835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECCFE6861C23675800C10835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCFE6891C23675800C10835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCFE68B1C23675800C10835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCFE6911C2367E500C10835 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		ECCFE6931C23680B00C10835 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		ECCFE6941C23680B00C10835 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		ECCFE6961C236E1600C10835 /* ReactNativeObjCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeObjCViewController.h; sourceTree = "<group>"; };
+		ECCFE6971C236E1600C10835 /* ReactNativeObjCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeObjCViewController.m; sourceTree = "<group>"; };
+		ECCFE6991C236E2F00C10835 /* ReactNativeExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		ECCFE69A1C236E2F00C10835 /* ReactNativeSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactNativeSwiftViewController.swift; sourceTree = "<group>"; };
+		ECCFE69F1C2371C500C10835 /* ReactNativeViewObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewObjC.h; sourceTree = "<group>"; };
+		ECCFE6A01C2371C500C10835 /* ReactNativeViewObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewObjC.m; sourceTree = "<group>"; };
+		ECCFE6A21C2371D600C10835 /* ReactNativeViewSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactNativeViewSwift.swift; sourceTree = "<group>"; };
+		EEE4754800DB2F80FF384541 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB85B6C96916A3B54395211 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011DB1175A94D67EEFFA041A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61AF01E09727E779AC6603FA /* Pods.debug.xcconfig */,
+				EEE4754800DB2F80FF384541 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE8BBF22BE4CB71F6A5EDE31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D939F92F7C9199759E52CD66 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECCFE66E1C23675800C10835 = {
 			isa = PBXGroup;
 			children = (
 				ECCFE6791C23675800C10835 /* ReactNativeExample */,
 				ECCFE6781C23675800C10835 /* Products */,
+				011DB1175A94D67EEFFA041A /* Pods */,
+				AE8BBF22BE4CB71F6A5EDE31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +95,23 @@
 		ECCFE6791C23675800C10835 /* ReactNativeExample */ = {
 			isa = PBXGroup;
 			children = (
+				EC0691BF1C23822500C1417F /* main.jsbundle */,
 				ECCFE67D1C23675800C10835 /* AppDelegate.h */,
 				ECCFE67E1C23675800C10835 /* AppDelegate.m */,
-				ECCFE6801C23675800C10835 /* ViewController.h */,
-				ECCFE6811C23675800C10835 /* ViewController.m */,
-				ECCFE6831C23675800C10835 /* Main.storyboard */,
 				ECCFE6861C23675800C10835 /* Assets.xcassets */,
 				ECCFE6881C23675800C10835 /* LaunchScreen.storyboard */,
 				ECCFE68B1C23675800C10835 /* Info.plist */,
 				ECCFE67A1C23675800C10835 /* Supporting Files */,
+				ECCFE6911C2367E500C10835 /* Home.storyboard */,
+				ECCFE6931C23680B00C10835 /* HomeViewController.h */,
+				ECCFE6941C23680B00C10835 /* HomeViewController.m */,
+				ECCFE6961C236E1600C10835 /* ReactNativeObjCViewController.h */,
+				ECCFE6971C236E1600C10835 /* ReactNativeObjCViewController.m */,
+				ECCFE69A1C236E2F00C10835 /* ReactNativeSwiftViewController.swift */,
+				ECCFE6991C236E2F00C10835 /* ReactNativeExample-Bridging-Header.h */,
+				ECCFE69F1C2371C500C10835 /* ReactNativeViewObjC.h */,
+				ECCFE6A01C2371C500C10835 /* ReactNativeViewObjC.m */,
+				ECCFE6A21C2371D600C10835 /* ReactNativeViewSwift.swift */,
 			);
 			path = ReactNativeExample;
 			sourceTree = "<group>";
@@ -86,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECCFE68E1C23675800C10835 /* Build configuration list for PBXNativeTarget "ReactNativeExample" */;
 			buildPhases = (
+				7768E60E75AF0F98C6D4FE59 /* Check Pods Manifest.lock */,
 				ECCFE6731C23675800C10835 /* Sources */,
 				ECCFE6741C23675800C10835 /* Frameworks */,
 				ECCFE6751C23675800C10835 /* Resources */,
+				111765208ABA972DCAFDB9AC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,36 +183,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCFE6921C2367E500C10835 /* Home.storyboard in Resources */,
 				ECCFE68A1C23675800C10835 /* LaunchScreen.storyboard in Resources */,
 				ECCFE6871C23675800C10835 /* Assets.xcassets in Resources */,
-				ECCFE6851C23675800C10835 /* Main.storyboard in Resources */,
+				EC0691C01C23822500C1417F /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		111765208ABA972DCAFDB9AC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7768E60E75AF0F98C6D4FE59 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECCFE6731C23675800C10835 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECCFE6821C23675800C10835 /* ViewController.m in Sources */,
 				ECCFE67F1C23675800C10835 /* AppDelegate.m in Sources */,
+				ECCFE6981C236E1600C10835 /* ReactNativeObjCViewController.m in Sources */,
 				ECCFE67C1C23675800C10835 /* main.m in Sources */,
+				ECCFE6A11C2371C500C10835 /* ReactNativeViewObjC.m in Sources */,
+				ECCFE6A31C2371D600C10835 /* ReactNativeViewSwift.swift in Sources */,
+				ECCFE69B1C236E2F00C10835 /* ReactNativeSwiftViewController.swift in Sources */,
+				ECCFE6951C23680B00C10835 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECCFE6831C23675800C10835 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECCFE6841C23675800C10835 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECCFE6881C23675800C10835 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,23 +338,30 @@
 		};
 		ECCFE68F1C23675800C10835 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AF01E09727E779AC6603FA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReactNativeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Delivery.ReactNativeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeExample/ReactNativeExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		ECCFE6901C23675800C10835 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE4754800DB2F80FF384541 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReactNativeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Delivery.ReactNativeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeExample/ReactNativeExample-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -300,6 +384,7 @@
 				ECCFE6901C23675800C10835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
