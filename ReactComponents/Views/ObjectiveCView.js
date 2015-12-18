@@ -1,23 +1,22 @@
 'use strict';
 
 import React from 'react-native';
+import ChangeBackground from '../Components/ChangeBackground';
 
 const {
-	ScrollView,
 	StyleSheet,
 	Text,
 	View
 } = React;
 
-// component with more than just a render function
 export default class ObjectiveCView extends React.Component {
+
 	render() {
 		return (
-			<ScrollView style={styles.container}>
-				<View>
-					<Text>Im in objc in a scrollview.</Text>
-				</View>
-			</ScrollView>
+			<View style={styles.container}>
+				<Text style={styles.text}>Welcome to react native</Text>
+				<ChangeBackground />
+			</View>
 		);
 	}
 }
@@ -25,6 +24,9 @@ export default class ObjectiveCView extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: 'red'
+	},
+	text: {
+		margin: 20,
+		textAlign: 'center'
 	}
 });
