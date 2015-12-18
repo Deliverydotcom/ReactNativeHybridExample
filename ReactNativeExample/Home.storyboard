@@ -127,27 +127,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a native UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE0-Ft-vKq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a native UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRp-6a-Vyn">
                                 <rect key="frame" x="158" y="70" width="286" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBR-gT-wiG" customClass="ReactNativeViewSwift" customModule="ReactNativeExample" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="113" width="600" height="487"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lka-Ly-NDC" customClass="ReactNativeViewSwift" customModule="ReactNativeExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="114" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HE0-Ft-vKq" firstAttribute="top" secondItem="nzE-iE-LXs" secondAttribute="bottom" constant="50" id="2hQ-Te-Jpr"/>
-                            <constraint firstItem="SBR-gT-wiG" firstAttribute="leading" secondItem="3VW-xa-lYa" secondAttribute="leading" id="4Bd-W4-xMn"/>
-                            <constraint firstItem="SBR-gT-wiG" firstAttribute="top" secondItem="HE0-Ft-vKq" secondAttribute="bottom" constant="10" id="Oo4-8f-EQA"/>
-                            <constraint firstItem="HE0-Ft-vKq" firstAttribute="centerX" secondItem="3VW-xa-lYa" secondAttribute="centerX" id="ZTk-CY-fzo"/>
-                            <constraint firstItem="rYr-CJ-Scz" firstAttribute="top" secondItem="SBR-gT-wiG" secondAttribute="bottom" id="gad-Vj-Ne4"/>
-                            <constraint firstAttribute="trailing" secondItem="SBR-gT-wiG" secondAttribute="trailing" id="hLg-Pd-rnD"/>
+                            <constraint firstItem="RRp-6a-Vyn" firstAttribute="top" secondItem="nzE-iE-LXs" secondAttribute="bottom" constant="50" id="76S-xL-YoU"/>
+                            <constraint firstItem="rYr-CJ-Scz" firstAttribute="top" secondItem="Lka-Ly-NDC" secondAttribute="bottom" id="8R5-Eh-vtV"/>
+                            <constraint firstItem="Lka-Ly-NDC" firstAttribute="leading" secondItem="3VW-xa-lYa" secondAttribute="leading" id="8yp-Dp-ICq"/>
+                            <constraint firstItem="Lka-Ly-NDC" firstAttribute="top" secondItem="RRp-6a-Vyn" secondAttribute="bottom" constant="10" id="mck-Kg-gyk"/>
+                            <constraint firstItem="RRp-6a-Vyn" firstAttribute="centerX" secondItem="3VW-xa-lYa" secondAttribute="centerX" id="mik-8f-dVA"/>
+                            <constraint firstAttribute="trailing" secondItem="Lka-Ly-NDC" secondAttribute="trailing" id="qYX-x9-la4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reactViewWrapper" destination="Lka-Ly-NDC" id="lQo-Oa-80m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8P-xa-Rpu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

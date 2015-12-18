@@ -22,8 +22,8 @@
     self.title = @"React Wrapper (Obj C)";
     
     self.reactViewWrapper.data = [@{
-                                   @"title": @"This is the title passed through data",
-                                   @"content": @"This is the content passed through data"
+                                   @"route": @"objectivec",
+                                   @"someFakeId": [NSNumber numberWithFloat:12345]
                                    } mutableCopy];
     
     [self.reactViewWrapper initializeReactView];

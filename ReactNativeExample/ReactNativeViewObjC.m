@@ -42,12 +42,12 @@
         // When not using code push
         jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
         
-        // When not using code push
+        // When using code push
         // jsCodeLocation = [CodePush bundleURL];
     }
     
     // Instantiate our root view, add as a subview, set constraints
-    // ==================================
+    // ============================================================
     
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"ReactNativeExample"

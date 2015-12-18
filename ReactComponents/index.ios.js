@@ -2,40 +2,60 @@
 
 import React from 'react-native';
 
-var {
-	Text,
-	View,
-	StyleSheet,
-	Navigator,
+// Views
+import SwiftView      from './Views/SwiftView';
+import ObjectiveCView from './Views/ObjectiveCView';
+
+const {
 	AppRegistry,
+	Navigator,
+	StyleSheet,
+	Text,
+	View
 } = React;
 
-
-
-// The Router wrapper
-// var RouteStack = {
-// 	'Order Details': {
-// 		component: OrderDetails,
-// 	},
-// 	'Merchant Info': {
-// 		component: MerchantInfo,
-// 	},
-// 	'Merchant Reviews': {
-// 		component: MerchantReviews,
-// 	}
-// }
+const RouteStack = {
+	swift: {
+		component: SwiftView,
+	},
+	objectivec: {
+		component: ObjectiveCView
+	}
+};
 
 class ReactNativeExample extends React.Component {
-	
-	constructor(props) {
-		super(props);
-		console.log(props);
+
+	getRouteWithProps(route, props) {
+		return {
+			...RouteStack[route],
+			props: props || {}
+		};
+	}
+
+	goToRoute(route, props) {
+		this.refs.navigator.push(this.getRouteWithProps(route, props));
+	}
+
+	renderScene(route, navigator) {
+		var Component = route.component;
+		return <Component goToRoute={this.goToRoute} {...route.props} />;
+	}
+
+	getInitialRoute() {
+		return {
+			...RouteStack[this.props.route],
+			props: this.props
+		};
 	}
 
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text>We made it!</Text>
+				<Navigator
+					ref='navigator'
+					initialRoute={this.getInitialRoute()}
+					renderScene={this.renderScene}
+				/>
 			</View>
 		);
 	}
@@ -43,8 +63,7 @@ class ReactNativeExample extends React.Component {
 
 var styles = StyleSheet.create({
 	container: {
-		flex: 1,
-		backgroundColor: 'red'
+		flex: 1
 	}
 });
 

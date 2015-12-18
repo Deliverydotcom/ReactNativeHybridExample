@@ -9,11 +9,17 @@
 import UIKit
 
 class ReactNativeSwiftViewController: UIViewController {
+    
+    @IBOutlet weak var reactViewWrapper: ReactNativeViewSwift!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "React Wrapper Swift"
-        // Do any additional setup after loading the view.
+        self.reactViewWrapper.data = [
+            "route": "swift",
+            "someFakeId": 12345
+        ]
+        self.reactViewWrapper.initializeReactView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +36,14 @@ class ReactNativeSwiftViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    
+    
+    self.reactViewWrapper.data = [@{
+    @"title": @"This is the title passed through data",
+    @"content": @"This is the content passed through data"
+    } mutableCopy];
+    
+    [self.reactViewWrapper initializeReactView];
     */
 
 }
