@@ -22,8 +22,7 @@
     self.title = @"React Wrapper (Obj C)";
     
     self.reactViewWrapper.data = [@{
-                                   @"route": @"objectivec",
-                                   @"someFakeId": [NSNumber numberWithFloat:12345]
+                                   @"content": @"Welcome to React Native"
                                    } mutableCopy];
     
     [self.reactViewWrapper initializeReactView];

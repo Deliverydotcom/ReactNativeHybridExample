@@ -8,14 +8,13 @@
 
 #import "ReactNativeViewObjC.h"
 #import "RCTRootView.h"
-#import "CodePush.h"
 
 @implementation ReactNativeViewObjC
 
 -(void) initializeReactView {
     
     
-    // Configure and set and data to be passed to react
+    // Configure and set any additional data to be passed to react
     // ================================================
     
     BOOL REACT_DEV_MODE = NO;
@@ -34,17 +33,10 @@
     // Set location of the main js bundle
     // ==================================
     
-    NSURL *jsCodeLocation;
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
     
-    if (REACT_DEV_MODE) {
-        NSString *urlString = @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true";
-        jsCodeLocation = [NSURL URLWithString:urlString];
-    } else {
-        // When not using code push
-//        jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-        
-        // When using code push
-         jsCodeLocation = [CodePush bundleURL];
+    if (!REACT_DEV_MODE) {
+        jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
     }
     
     // Instantiate our root view, add as a subview, set constraints
@@ -65,7 +57,6 @@
     
     [self addConstraints:constraints];
     [self layoutIfNeeded];
-    
 }
 
 @end

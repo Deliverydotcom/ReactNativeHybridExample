@@ -1,68 +1,21 @@
 'use strict';
 
 import React from 'react-native';
-import CodePush from 'react-native-code-push';
-
-// Views
-import SwiftView      from './Views/SwiftView';
-import ObjectiveCView from './Views/ObjectiveCView';
 
 const {
 	AppRegistry,
-	Navigator,
 	StyleSheet,
 	Text,
 	View
 } = React;
 
-const RouteStack = {
-	swift: {
-		component: SwiftView,
-	},
-	objectivec: {
-		component: ObjectiveCView
-	}
-};
-
 class ReactNativeExample extends React.Component {
-
-	componentDidMount() {
-		if (!this.props.DEV_MODE) {
-			CodePush.sync();
-		}
-	}
-
-	getRouteWithProps(route, props) {
-		return {
-			...RouteStack[route],
-			props: props || {}
-		};
-	}
-
-	goToRoute(route, props) {
-		this.refs.navigator.push(this.getRouteWithProps(route, props));
-	}
-
-	renderScene(route, navigator) {
-		var Component = route.component;
-		return <Component goToRoute={this.goToRoute} {...route.props} />;
-	}
-
-	getInitialRoute() {
-		return {
-			...RouteStack[this.props.route],
-			props: this.props
-		};
-	}
-
 	render() {
 		return (
 			<View style={styles.container}>
-				<Navigator
-					ref='navigator'
-					initialRoute={this.getInitialRoute()}
-					renderScene={this.renderScene}
-				/>
+				<Text style={styles.text}>
+					{this.props.content}
+				</Text>
 			</View>
 		);
 	}
@@ -70,7 +23,12 @@ class ReactNativeExample extends React.Component {
 
 var styles = StyleSheet.create({
 	container: {
-		flex: 1
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center'
+	},
+	text: {
+		fontSize: 24
 	}
 });
 
