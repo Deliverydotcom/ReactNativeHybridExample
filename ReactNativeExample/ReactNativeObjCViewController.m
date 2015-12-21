@@ -23,7 +23,7 @@
     
     self.reactViewWrapper.data = [@{
                                    @"route": @"objectivec",
-                                   @"someFakeId": [NSNumber numberWithFloat:12345]
+                                   @"content": @"Welcome to React Native, with some fancy buttons in a scroll view"
                                    } mutableCopy];
     
     [self.reactViewWrapper initializeReactView];

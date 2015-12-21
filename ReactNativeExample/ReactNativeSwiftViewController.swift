@@ -17,7 +17,7 @@ class ReactNativeSwiftViewController: UIViewController {
         self.title = "React Wrapper Swift"
         self.reactViewWrapper.data = [
             "route": "swift",
-            "someFakeId": 12345
+            "content": "Welcome to React Native"
         ]
         self.reactViewWrapper.initializeReactView()
     }

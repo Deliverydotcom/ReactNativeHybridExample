@@ -14,7 +14,7 @@ export default class ObjectiveCView extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text style={styles.text}>Welcome to react native</Text>
+				<Text style={styles.text}>{this.props.content}</Text>
 				<ChangeBackground />
 			</View>
 		);

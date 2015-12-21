@@ -8,15 +8,12 @@ const {
 	View
 } = React;
 
-// component with just a render function can be expressed as
+// component with just a render function can be expressed as..
 
 export default (props) => (
 	<View style={styles.container}>
 		<Text style={styles.text}>
-			Welcome to react native
-		</Text>
-		<Text style={styles.text}>
-			Here we could so something with the id passed to us from the native view controller: {props.someFakeId}
+			{props.content}
 		</Text>
 	</View>
 );
@@ -24,9 +21,10 @@ export default (props) => (
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center'
 	},
 	text: {
-		margin: 20,
-		textAlign: 'center'
+		fontSize: 24
 	}
 });

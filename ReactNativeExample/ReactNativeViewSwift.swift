@@ -10,6 +10,7 @@ import UIKit
 
 class ReactNativeViewSwift: UIView {
     
+    // set any data you want to pass to react in this dictionary
     var data: [String: AnyObject]?
 
     func initializeReactView() {
@@ -30,13 +31,9 @@ class ReactNativeViewSwift: UIView {
         // Set location of the main js bundle
         
         var jsCodeLocation = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios&dev=true")
+        
         if !REACT_DEV_MODE {
-            
-            // When not using code push
-//            jsCodeLocation = NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle")
-            
-            // When using code push
-             jsCodeLocation = CodePush.bundleURL()
+            jsCodeLocation = NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle")
         }
         
         // Instantiate our root view, add as a subview, set constraints
