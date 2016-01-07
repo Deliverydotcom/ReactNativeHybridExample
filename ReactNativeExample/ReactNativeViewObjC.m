@@ -26,7 +26,8 @@
     // this is a good place to pass configuration variables
     [self.data setValuesForKeysWithDictionary:@{
                                                 @"DEV_MODE" : [NSNumber numberWithBool:REACT_DEV_MODE],
-                                                @"API_KEY"  : @"ABCDEF123456"
+                                                @"API_KEY"  : @"ABCDEF123456",
+                                                @"AUTHORIZATION_TOKEN": @"a8b6de25b5bf481824c9c4173c56231a"
                                                 }];
     
     

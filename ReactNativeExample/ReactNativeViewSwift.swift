@@ -25,8 +25,9 @@ class ReactNativeViewSwift: UIView {
         }
         
         // this is a good place to pass configuration variables
-        self.data!["DEV_MODE"] = REACT_DEV_MODE
-        self.data!["API_KEY"]  = "ABCDEF123456"
+        self.data!["DEV_MODE"]            = REACT_DEV_MODE
+        self.data!["API_KEY"]             = "ABCDEF123456"
+        self.data!["AUTHORIZATION_TOKEN"] = "a8b6de25b5bf481824c9c4173c56231a"
         
         // Set location of the main js bundle
         
