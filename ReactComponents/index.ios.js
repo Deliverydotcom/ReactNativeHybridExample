@@ -15,46 +15,27 @@ const {
 } = React;
 
 const RouteStack = {
-	swift: {
-		component: SwiftView,
-	},
-	objectivec: {
-		component: ObjectiveCView
-	}
+	swift: SwiftView,
+	objectivec: ObjectiveCView
 };
 
 class ReactNativeExample extends React.Component {
 
-	getRouteWithProps(route, props) {
-		return {
-			...RouteStack[route],
-			props: props || {}
-		};
-	}
-
-	goToRoute(route, props) {
-		this.refs.navigator.push(this.getRouteWithProps(route, props));
-	}
-
 	renderScene(route, navigator) {
-		var Component = route.component;
-		return <Component goToRoute={this.goToRoute} {...route.props} />;
-	}
-
-	getInitialRoute() {
-		return {
-			...RouteStack[this.props.route],
-			props: this.props
-		};
+		const Component = route.component;
+		return <Component navigator={navigator} {...route.props} />;
 	}
 
 	render() {
+		const component = RouteStack[this.props.route];
+		const props     = this.props;
+
 		return (
 			<View style={styles.container}>
 				<Navigator
 					ref='navigator'
-					initialRoute={this.getInitialRoute()}
-					renderScene={this.renderScene}
+					initialRoute={{component, props}}
+					renderScene={this.renderScene.bind(this)}
 				/>
 			</View>
 		);
