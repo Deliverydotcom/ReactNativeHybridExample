@@ -55,19 +55,19 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	buttonContainer: {
+		alignItems: 'center',
 		flex: 1,
 		flexDirection: 'column',
-		alignItems: 'center'
 	},
 	button: {
-		borderWidth: 1,
 		borderColor: 'black',
 		borderRadius: 4,
+		borderWidth: 1,
 		margin: 20,
 		padding: 10,
-		width: 200
+		width: 200,
 	},
 	buttonText: {
-		textAlign: 'center'
+		textAlign: 'center',
 	}
 });

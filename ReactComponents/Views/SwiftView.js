@@ -8,8 +8,6 @@ const {
 	View
 } = React;
 
-// component with just a render function can be expressed as..
-
 export default (props) => (
 	<View style={styles.container}>
 		<Text style={styles.text}>

@@ -21,18 +21,15 @@
     self.title = @"Home";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)reactViewObjCPressed:(id)sender {
     ReactNativeObjCViewController *reactNativeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ReactNativeObjCVC"];
+    reactNativeVC.route = @"objectivec";
     [self.navigationController pushViewController:reactNativeVC animated:YES];
 }
 
 - (IBAction)reactViewSwiftPressed:(id)sender {
     ReactNativeSwiftViewController *reactNativeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ReactNativeSwiftVC"];
+    reactNativeVC.route = @"swift";
     [self.navigationController pushViewController:reactNativeVC animated:YES];
 }
 

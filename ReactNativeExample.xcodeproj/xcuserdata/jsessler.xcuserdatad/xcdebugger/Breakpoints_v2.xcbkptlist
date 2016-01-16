@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ReactNativeExample/HomeViewController.m"
-            timestampString = "472084693.747825"
+            timestampString = "474652614.307595"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-reactViewSwiftPressed:"
             landmarkType = "5">
          </BreakpointContent>

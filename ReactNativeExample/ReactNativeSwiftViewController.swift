@@ -10,13 +10,15 @@ import UIKit
 
 class ReactNativeSwiftViewController: UIViewController {
     
+    var route: String?
+    
     @IBOutlet weak var reactViewWrapper: ReactNativeViewSwift!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "React Wrapper Swift"
         self.reactViewWrapper.data = [
-            "route": "swift",
+            "route": self.route!,
             "content": "Welcome to React Native"
         ]
         self.reactViewWrapper.initializeReactView()

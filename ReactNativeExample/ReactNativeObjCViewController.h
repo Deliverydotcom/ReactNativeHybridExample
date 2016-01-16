@@ -10,4 +10,6 @@
 
 @interface ReactNativeObjCViewController : UIViewController
 
+@property (strong, nonatomic) NSString *route;
+
 @end
