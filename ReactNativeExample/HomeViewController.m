@@ -23,13 +23,13 @@
 
 - (IBAction)reactViewObjCPressed:(id)sender {
     ReactNativeObjCViewController *reactNativeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ReactNativeObjCVC"];
-    reactNativeVC.route = @"objectivec";
+    reactNativeVC.route = @"routeNameObjectiveCView";
     [self.navigationController pushViewController:reactNativeVC animated:YES];
 }
 
 - (IBAction)reactViewSwiftPressed:(id)sender {
     ReactNativeSwiftViewController *reactNativeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ReactNativeSwiftVC"];
-    reactNativeVC.route = @"swift";
+    reactNativeVC.route = @"routeNameSwiftView";
     [self.navigationController pushViewController:reactNativeVC animated:YES];
 }
 

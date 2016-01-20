@@ -15,8 +15,8 @@ const {
 } = React;
 
 const RouteStack = {
-	swift: SwiftView,
-	objectivec: ObjectiveCView
+	routeNameObjectiveCView : ObjectiveCView,
+	routeNameSwiftView      : SwiftView
 };
 
 class ReactNativeExample extends React.Component {
